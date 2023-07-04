@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <div className='px-16 py-8 text-[44px]'>
         <h1>Contact</h1>
-        <h1>Let's Keep in Touch</h1>
+        <h1>Let's Keep in Touch with me</h1>
         <div className='flex px-2 sm:px-4 py-16'>
           <div className='flex-1 w-3/5 p-8'>
             <Image src={keepInTouch} alt='keep in touch' />
