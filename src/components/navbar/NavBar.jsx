@@ -37,7 +37,7 @@ const NavBar = () => {
             <Link className='px-4 py-4 justify-between items-center' href="/">Die Zuverlässigkeit</Link>
             <button 
                     className='flex ml-auto bg-gray-700 hover:bg-gray-600 text-white font-bold justify-between items-center px-4 py-4 w-[100px] h-[40px] rounded'
-                    onClick = {console.log("Logged Out")}
+                    // onClick = {console.log("Logged Out")}
             >
                 Log Out
             </button>

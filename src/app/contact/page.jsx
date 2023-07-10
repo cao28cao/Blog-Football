@@ -13,9 +13,9 @@ const Contact = () => {
           </div>
           <div className='flex-1 w-2/5'>
             <form className='flex flex-col space-y-4 text-[16px]'>
-              <input type="text" placeholder='Name' className='px-2 py-4 rounded-md text-black'/>
-              <input type="text" placeholder='Email' className='px-2 py-4 rounded-md text-black' />
-              <textarea cols="44" rows="10" placeholder='Messages' className='px-2 py-4 rounded-md text-black'></textarea>
+              <input type="text" placeholder='Name' className='px-2 py-4 rounded-md bg-black border'/>
+              <input type="text" placeholder='Email' className='px-2 py-4 rounded-md bg-black border' />
+              <textarea cols="44" rows="10" placeholder='Messages' className='px-2 py-4 rounded-md bg-black border'></textarea>
             </form>
           </div>
         </div>

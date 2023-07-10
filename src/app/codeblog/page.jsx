@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import overload from '../../img/overload.jpg'
 import promises from '../../img/promises.png'
 import CRAvsVite from '../../img/cravsv.jpg'
@@ -14,7 +15,7 @@ const Code = () => {
               src={overload} 
               alt="overload"
             />
-            <a href="/codeblog/1">
+            <a href="/codeblog/oop">
               <div className='absolute bottom-0 w-full h-16 bg-black hover:bg-gray-700 opacity-60'>
                 <p class='px-8 pt-2 pb-4 text-white justify-center absolute'>
                   Overloadding trong OOP
@@ -31,7 +32,7 @@ const Code = () => {
               src={promises} 
               alt="promises"
             />
-              <a href="/codeblog/2">
+              <a href="/codeblog/js">
                 <div className='absolute bottom-0 w-full h-20 bg-black hover:bg-gray-700 opacity-60'>
                   <p class='px-8 pt-2 pb-4 text-white justify-center absolute lg:text-[14px]'>
                     Promises trong JavaScript
@@ -47,7 +48,7 @@ const Code = () => {
               src={CRAvsVite} 
               alt="CRAvsVite"
             />
-              <a href="/codeblog/3">
+              <a href="/codeblog/cra">
                 <div className='absolute bottom-0 w-full h-20 bg-black hover:bg-gray-700 opacity-60'>
                   <p class='px-8 pt-2 pb-4 text-white justify-center absolute'>
                     Create React App hay Vite?

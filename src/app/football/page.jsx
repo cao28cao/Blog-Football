@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import declanrice from '../../img/declanrice.jpg'
 import midBayern from '../../img/midBayern.jpg'
 import tonali from '../../img/tonali.jpg'
+import kimminjae from '../../img/kimminjae.jpeg'
+import vlahovic from '../../img/vlahovic.jpg'
 const Football = () => {
   return (
     <>
@@ -53,8 +56,43 @@ const Football = () => {
           </div>
       </div>
 
-      <div className='pb-8 flex px-16 md:px-6 gap-6 border-solid'>
-          
+      <div className='py-8 px-16 md:px-6 gap-6 border-solid'>
+          <Link href='/football/4' className='flex pb-8'>
+            <div className='flex flex-col'>
+              <Image
+              className='rounded-md h-[225px] z-9 w-full object-cover'
+                src={kimminjae}
+              />
+            </div>
+            <div className='flex flex-col pl-4'>
+              <h1 className='text-[40px]'>Test</h1>
+              <h1>Desc</h1>
+            </div>
+          </Link>
+          <Link href='/football/5' className='flex pb-8'>
+            <div className='flex flex-col'>
+              <Image
+              className='rounded-md h-[225px] z-9 w-full object-cover'
+                src={vlahovic}
+              />
+            </div>
+            <div className='flex flex-col pl-4'>
+              <h1 className='text-[40px]'>Test</h1>
+              <h1>Desc</h1>
+            </div>
+          </Link>
+          <Link href='/football/6' className='flex pb-8'>
+            <div className='flex flex-col'>
+              <Image
+              className='rounded-md h-[225px] z-9 w-full object-cover'
+                src={kimminjae}
+              />
+            </div>
+            <div className='flex flex-col pl-4'>
+              <h1 className='text-[40px]'>Test</h1>
+              <h1>Desc</h1>
+            </div>
+          </Link>
       </div>
 
       
