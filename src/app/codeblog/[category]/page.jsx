@@ -1,52 +1,43 @@
-import React from 'react'
-import Image from 'next/image'
-import oop from '../../../img/oop.jpg'
+import React from 'react';
+import Image from 'next/image';
+import oop from '../../../img/oop.jpg';
+import { items } from './data.js';
+import { notFound } from 'next/navigation';
+
+const getData = (cat) => {
+  const data = items[cat]
+
+  if(data)
+  {
+    return data;
+  }
+  return notFound();
+}
 
 const BlogLayout = ({params}) => {
-  console.log(params)
+  const data = getData(params.category)
   return (
     <div className='px-8 py-4'>
-        <h1 className='text-[44px]'>{params.category}</h1>
-        <div className='flex'>
-          <div className='flex flex-col px-16 justify-center'>
-            <div>
-              <h1 className='text-[40px]'>Test</h1>
-              <h1>Desc</h1>
-              <button 
-                      className='flex bg-gray-700 hover:bg-gray-600 text-white font-bold justify-between items-center px-4 py-4 w-[100px] h-[60px] rounded'
-                      // onClick = {console.log("Logged Out")}
-              >
-                  See More
-              </button>
-            </div>
+      <h1 className='text-[44px]'>{params.category}</h1>
+      {data.map(item=>(
+        <div key={item.id}>
+          <div>
+            <h1>{item.title}</h1>
+            <p>{item.desc}</p>
+            <button>
+              Read More
+            </button>
           </div>
-          <div className='flex flex-col px-16 ml-auto'>
+          <div>
             <Image
-            className='rounded-md relative h-[500px] w-[500px]'
-            src={oop}
+              src={item.img}
+              alt="OOP"
+              width={500}
+              height={500}
             />
           </div>
         </div>
-        <div className='flex odd:flex-row-reverse'>
-          <div className='flex flex-col px-16 justify-center ml-auto'>
-            <div>
-              <h1 className='text-[40px]'>Test</h1>
-              <h1>Desc</h1>
-              <button 
-                      className='flex bg-gray-700 hover:bg-gray-600 text-white font-bold justify-between items-center px-4 py-4 w-[100px] h-[60px] rounded'
-                      // onClick = {console.log("Logged Out")}
-              >
-                  See More
-              </button>
-            </div>
-          </div>
-          <div className='flex flex-col px-16'>
-            <Image
-            className='rounded-md relative h-[500px] w-[500px]'
-            src={oop}
-            />
-          </div>
-        </div>    
+      ))}      
     </div>
   )
 }

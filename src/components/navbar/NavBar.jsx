@@ -24,6 +24,11 @@ const links = [
         title: "Credits",
         url: "/credits",
     },
+    {
+        id: 5,
+        title: "Dashboard",
+        url: "/dashboard",
+    }
 ];
 
 const NavBar = () => {
