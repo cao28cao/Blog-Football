@@ -1,21 +1,21 @@
-import React from 'react';
-import Image from 'next/image';
-import oop from '../../../img/oop.jpg';
-import { items } from './data.js';
-import { notFound } from 'next/navigation';
+import React from "react";
+import Image from "next/image";
+import { items } from "./data.js";
+import { notFound } from "next/navigation";
+import sirHyo from "../../../img/sirHyo.png";
 
 const getData = (cat) => {
-  const data = items[cat]
+  const data = items[cat];
 
-  if(data)
-  {
+  if (data) {
     return data;
   }
+
   return notFound();
-}
+};
 
 const BlogLayout = ({params}) => {
-  const data = getData(params.category)
+  const data = getData(params.category);
   return (
     <div className='px-8 py-4'>
       <h1 className='text-[44px]'>{params.category}</h1>
@@ -24,14 +24,11 @@ const BlogLayout = ({params}) => {
           <div>
             <h1>{item.title}</h1>
             <p>{item.desc}</p>
-            <button>
-              Read More
-            </button>
-          </div>
-          <div>
+            <button>Read More</button>
             <Image
-              src={item.img}
-              alt="OOP"
+              className='flex flex-col z-9 object-cover'
+              src={item.image}
+              alt={item.title}
               width={500}
               height={500}
             />
