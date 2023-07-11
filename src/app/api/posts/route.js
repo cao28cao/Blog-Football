@@ -7,7 +7,6 @@ export const GET = async (req) => {
         await connect();
         const posts = await Post.find();
         return new NextResponse(posts, { status: 200 });
-        
     } catch (error) {
         return new NextResponse("Database connection failed", { status: 500 });
     }
