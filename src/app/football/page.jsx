@@ -31,13 +31,14 @@ const Football = async () => {
             <Image
               className='rounded-md h-[250px] z-9 w-[250px] object-cover'
               src={item.img}
-              width={250}
-              height={250}
+              width={800}
+              height={800}
+              objectFit='cover'
             />
             </div>
             <div className='flex flex-col pl-4 w-3/5'>
               <h1 className='text-[24px] font-bold text-justify'>{item.title}</h1>
-              <h1 className='text-[16px] text-justify'>{item.body}</h1>
+              <h1 className='text-[16px] text-justify'>{item.desc}</h1>
           </div>
         </Link>
       ))}
