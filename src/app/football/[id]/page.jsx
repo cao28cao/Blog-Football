@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 const BlogPost = async ({ params }) => {
   const data = await getData(params.id);
   return (
-    <div>
+    <>
       <div className='flex px-8 py-4 text-[32px]'>
         <div className='flex flex-col w-1/2'>
           <h1 className='text-[20px] font-bold'>{data.title}</h1>
@@ -54,7 +54,7 @@ const BlogPost = async ({ params }) => {
           {data.content}
         </p>
       </div>
-    </div>
+    </>
   )
 }
 
