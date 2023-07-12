@@ -32,8 +32,8 @@ const BlogPost = async ({ params }) => {
           <p className='text-[14px] text-justify'>{data.desc}</p>
           <div className='flex py-4'>
             <Image
-              className='flex flex-col rounded-full z-9 object-cover'
-              src={data.img}
+              className='flex flex-col w-[50px] h-[50px] rounded-full z-9 object-cover'
+              src={data.author}
               width={80}
               height={150}
             />
@@ -43,7 +43,9 @@ const BlogPost = async ({ params }) => {
         <div className='flex flex-col w-1/2 pl-16'>
           <Image
             className='rounded-md h-[300px] z-9 w-[600px] object-cover ml-auto'
-            src={vlahovic}
+            src={data.img}
+            width={600}
+            height={600}
           />
         </div>
       </div>

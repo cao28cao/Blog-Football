@@ -29,18 +29,11 @@ const links = [
 const NavBar = () => {
   return (
     <div className='z-10 fixed w-full'>
-        <nav className='flex flex-row h-[80px] px-16 py-2 justify-between items-center navbar bg-gray-800'>
-        {/* <nav className='flex flex-row py-2 fixed px-16 justify-between items-center navbar text-[20px]'> */}
+        <nav className='flex flex-row h-[80px] px-16 py-2 items-center navbar bg-gray-800'>
             <Link className='px-4 py-4' href="/">
                 <Image className='w-[50px] h-[50px]' src={logo} alt="logo"/>
             </Link>
-            <Link className='px-4 py-4 justify-between items-center' href="/">Die Zuverlässigkeit</Link>
-            <button 
-                    className='flex ml-auto bg-gray-700 hover:bg-gray-600 text-white font-bold justify-between items-center px-4 py-4 w-[100px] h-[40px] rounded'
-                    // onClick = {console.log("Logged Out")}
-            >
-                Log Out
-            </button>
+            <Link className='px-4 py-4 items-center' href="/">Die Zuverlässigkeit</Link>
         </nav>
         <nav className='flex flex-row h-[56px] px-16 py-2 justify-between items-center navbar bg-gray-600'>
             <div className='flex flex-row'>

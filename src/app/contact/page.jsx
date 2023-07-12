@@ -1,6 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import keepInTouch from '../../img/keepintouch.jpg'
+
+export const metadata = {
+  title: 'Contact',
+  description: 'Die Zuverlässigkeit Blog',
+}
+
 const Contact = () => {
   return (
     <>
