@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import {notFound} from 'next/navigation'
-import vlahovic from '../../../img/vlahovic.jpg'
 
 async function getData(id) {
   const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
@@ -28,7 +27,7 @@ const BlogPost = async ({ params }) => {
     <>
       <div className='flex px-8 py-4 text-[32px]'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='text-[20px] font-bold'>{data.title}</h1>
+          <h1 className='text-auto font-bold text-justify'>{data.title}</h1>
           <p className='text-[14px] text-justify'>{data.desc}</p>
           <div className='flex py-4'>
             <Image
@@ -50,9 +49,10 @@ const BlogPost = async ({ params }) => {
         </div>
       </div>
       <div className='px-8 py-4'>
-        <p className='text-justify'>
-          {data.content}
-        </p>
+        <p className='text-justify'>{data.content1}</p>
+        <p className='text-justify'>{data.content2}</p>
+        <p className='text-justify'>{data.content3}</p>
+        <p className='text-justify'>{data.content4}</p>
       </div>
     </>
   )

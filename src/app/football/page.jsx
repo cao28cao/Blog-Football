@@ -38,7 +38,7 @@ const Football = async () => {
             </div>
             <div className='flex flex-col pl-4 w-3/5'>
               <h1 className='text-[24px] font-bold text-justify'>{item.title}</h1>
-              <h1 className='text-[20px] text-justify'>{item.username}</h1>
+              <h1 className='text-[16px] text-justify'>{item.username}</h1>
               {/* <h1 className='text-[16px] text-justify'>{item.desc}</h1> */}
           </div>
         </Link>
