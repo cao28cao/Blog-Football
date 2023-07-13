@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import {notFound} from 'next/navigation'
 
-async function getData(_id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${_id}`, {
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, 
+  {
       cache: 'no-store',
   });
   if (!res.ok) {

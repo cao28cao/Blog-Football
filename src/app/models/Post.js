@@ -7,6 +7,10 @@ const postSchema = new Schema({
             type: String,
             required: true,
         },
+        body:{
+            type: String,
+            required: false,
+        },
         desc:{
             type: String,
             required: true,
