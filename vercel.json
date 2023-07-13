@@ -1,0 +1,5 @@
+{
+    "routes": [
+      { "src": "/api/posts", "dest": "http://localhost:3000/api/posts" }
+    ]
+  }
