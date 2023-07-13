@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
-import sirHyo from "../../../img/sirHyo.png";
 
 const getData = (cat) => {
   const data = items[cat];
