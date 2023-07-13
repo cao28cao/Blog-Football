@@ -36,7 +36,6 @@ const BlogPost = async ({ params }) => {
               src={data.author}
               width={80}
               height={150}
-              alt={data.author}
             />
             <p className='flex flex-col pl-4 text-[14px] font-bold justify-center'>{data.username}</p>
           </div>
@@ -47,7 +46,6 @@ const BlogPost = async ({ params }) => {
             src={data.img}
             width={600}
             height={600}
-            alt={data.title}
           />
         </div>
       </div>
