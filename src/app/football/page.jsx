@@ -33,7 +33,6 @@ const Football = async () => {
               src={item.img}
               width={800}
               height={800}
-              objectFit='cover'
             />
             </div>
             <div className='flex flex-col pl-4 w-3/5'>

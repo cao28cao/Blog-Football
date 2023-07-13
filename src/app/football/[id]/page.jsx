@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import {notFound} from 'next/navigation'
 
-async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+async function getData(_id) {
+  const res = await fetch(`http://localhost:3000/api/posts/${_id}`, {
       cache: 'no-store',
   });
   if (!res.ok) {
