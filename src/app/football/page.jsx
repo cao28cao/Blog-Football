@@ -1,9 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import declanrice from '../../img/declanrice.jpg'
+import midBayern from '../../img/midBayern.jpg'
+import tonali from '../../img/tonali.jpg'
+import kimminjae from '../../img/kimminjae.jpeg'
+import vlahovic from '../../img/vlahovic.jpg'
 
 async function getData() {
-  const res = await fetch('http://127.0.0.1:3000/api/posts', {
+  const res = await fetch('http://localhost:3000/api/posts', {
       cache: 'no-store',
     });
   if (!res.ok) {
@@ -28,7 +33,6 @@ const Football = async () => {
               src={item.img}
               width={800}
               height={800}
-              alt={item.img}
             />
             </div>
             <div className='flex flex-col pl-4 w-3/5'>
