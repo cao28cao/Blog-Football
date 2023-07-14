@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {notFound} from 'next/navigation'
 
 async function getData(_id) {
-  const res = await fetch(`http://127.0.0.1:3000/api/posts/${_id}`, 
+  const res = await fetch(`https://blog-football.vercel.app/api/posts/${_id}`, 
   {
       cache: 'no-store',
   });
