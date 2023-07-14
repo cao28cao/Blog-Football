@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 async function getData() {
-  const res = await fetch('https://blog-football.vercel.app/api/posts', {
+  const res = await fetch('https://fakeserver-m3kh.onrender.com/api/posts', {
       cache: 'no-store',
     });
   if (!res.ok) {
@@ -21,7 +21,7 @@ const Football = async () => {
   return (
     <div>
       {data.map((item) => (
-        <Link href={`/football/${item._id}`} key={item.id} className='flex pb-8'>
+        <Link href={`/football/${item.id}`} key={item.id} className='flex pb-8'>
           <div className='flex flex-col'>
             <Image
               className='rounded-md h-[250px] z-9 w-[250px] object-cover'

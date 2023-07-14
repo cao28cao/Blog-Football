@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import {notFound} from 'next/navigation'
 
-async function getData(_id) {
-  const res = await fetch(`https://blog-football.vercel.app/api/posts/${_id}`, 
+async function getData(id) {
+  const res = await fetch(`https://fakeserver-m3kh.onrender.com/api/posts/${id}`, 
   {
       cache: 'no-store',
   });
